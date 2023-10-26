@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Blog</title>
     <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-orange-300 m-0 p-0">
+<body class="bg-sky-950 m-0 p-0">
     <header>
         <nav class="bg-white w-full top-0 left-0 border-b border-gray-200">
-            <div class="max-w-screen-xl flex flex-wrap items-center justify-between ms-auto p-4">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between ms-auto p-2">
             <a href="index.html" class="flex items-center">
-                <img src="/images/plane.png" class="h-20 mr-2" alt="image of plane taking off">
-                <span class="self-center text-2xl font-semibold whitespace-nowrap mr-10">Travel Blog</span>
+                <img src="/images/plane.png" class="h-20" alt="simple image logo of plane taking off">
+                <h1 class="self-center text-2xl font-semibold whitespace-pre-wrap">Travel Blog</h1>
             </a>
             <div class="flex md:order-2">
                 <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
@@ -29,10 +30,7 @@
                 <a href="#" class="block py-2 pl-3 pr-4 text-black text-lg bg-orange-300 rounded md:bg-transparent md:text-orange-500 md:p-0" aria-current="page">Home</a>
                 </li>
                 <li>
-                <a href="/src/gallery.html" class="block py-2 pl-3 pr-4 text-gray-900 text-lg rounded hover:bg-orange-100 md:hover:bg-transparent md:hover:text-orange-500 md:p-0">Gallery</a>
-                </li>
-                <li>
-                <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 text-lg rounded hover:bg-orange-100 md:hover:bg-transparent md:hover:text-orange-500 md:p-0">Blog</a>
+                <a href="/src/gallery.html" class="block py-2 pl-3 pr-4 text-gray-900 text-lg rounded hover:bg-orange-100 md:hover:bg-transparent md:hover:text-orange-500 md:p-0">About Me</a>
                 </li>
                 <li>
                 <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 text-lg rounded hover:bg-orange-100 md:hover:bg-transparent md:hover:text-orange-500 md:p-0">Contact</a>
@@ -40,7 +38,7 @@
             </ul>
             </div>
             </div>
-            <div class="w-full pb-10 relative">
+            <div class="w-full p-0 relative">
                 <img class="block w-full" src="../../images/banner1.jpg" alt="cliftop view of an ocean sunset looking out towards the horizon">
                     <p class="hidden md:block absolute w-full top-1/2 font-bold text-gray-800 text-center text-lg p-5 bg-opacity-25 bg-white">
                         "Where the sky meets the sea is where I'm meant to be..."
@@ -50,21 +48,10 @@
     </header>
 
     <main> 
+  
+        <h1 class="text-grey-900 justify-center text-center text-2xl mt-10 p-5 bg-white ">Some of my favourite places so far...</h1>
 
-        <section class="w-3/4">
-            <div class=" bg-white border border-gray-200 rounded-lg shadow-2xl">
-                <img class="rounded-full shadow-2xl h-44 my-5 ml-10"  src="/images/becca1.jpg" alt="profile picture of the blog owner" />
-                <h2 class="text-lg text-center">About Me</h2>
-                <p class="text-lg text-right">Welcome to my travel blog. My name is Becca and Travelling is one of my favourite things to do! Being half mermaid
-                    and growing up by the sea, I am happiest in the Ocean and I'm always chasing the sun. I really hate the cold but I still
-                    try to explore other places!
-                </p>
-            </div>
-        </section>
-
-        <h1 class="text-grey-900 w-full text-center text-2xl py-10 ">Some of the places I have travelled so far...</h1>
-
-        <section class="mx-auto w-full flex-justify-between justify-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-5">  
+        <section class="mx-auto mt-5 w-full flex-justify-between justify-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-5">  
             <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
                 <a href="#">
                     <img class="rounded-t-lg h-80" src="/images/sa6.jpg" alt="Kitesurfers at Langebaan lagoon in CapeTown South Africa" />
@@ -74,7 +61,7 @@
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Cape Town, South Africa</h5>
                     </a>
                     <p class="mb-3 font-normal text-gray-700">When they say you leave behind a part of your heart if you visit South Africa, they are not kidding...</p>
-                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-orange-500 border-2 border-orange-500 rounded-lg">
+                    <a href="#" class="flex justify-center items-center px-3 py-2 text-lg font-semibold text-orange-600 border-2 border-orange-600 rounded-xl">
                         Read more
                     </a>
                 </div>
@@ -89,7 +76,7 @@
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Cornwall, UK (Hometown)</h5>
                     </a>
                     <p class="mb-3 font-normal text-gray-700">Theres no place like home. It is beautiful and still one of my favourite places to visit, unwind and enjoy the water...</p>
-                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-orange-500 border-2 border-orange-500 rounded-lg">
+                    <a href="#" class="flex justify-center items-center px-3 py-2 text-lg font-semibold text-orange-600 border-2 border-orange-600 rounded-xl">
                         Read more
                     </a>
                 </div>
@@ -104,7 +91,7 @@
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Kos, Greece</h5>
                     </a>
                     <p class="mb-3 font-normal text-gray-700">The island full of memories that I often escape to when I need the sun on my face and sand between my toes...</p>
-                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-orange-500 border-2 border-orange-500 rounded-lg">
+                    <a href="#" class="flex justify-center items-center px-3 py-2 text-lg font-semibold text-orange-600 border-2 border-orange-600 rounded-xl">
                         Read more
                     </a>
                 </div>
@@ -119,7 +106,7 @@
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Venice, Italy</h5>
                     </a>
                     <p class="mb-3 font-normal text-gray-700">Venice was cold but beautiful and a really great place to get lost in, which is exactly what happened...</p>
-                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-orange-500 border-2 border-orange-500 rounded-lg">
+                    <a href="#" class="flex justify-center items-center px-3 py-2 text-lg font-semibold text-orange-600 border-2 border-orange-600 rounded-xl">
                         Read more
                     </a>
                 </div>
@@ -134,7 +121,7 @@
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Italian Dolomites</h5>
                     </a>
                     <p class="mb-3 font-normal text-gray-700">By far the coldest place I have ever been! Definitley a challenge for me, but it was still full of funny and unforgettable adventures...<br> </p>
-                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-orange-500 border-2 border-orange-500 rounded-lg">
+                    <a href="#" class="flex justify-center items-center px-3 py-2 text-lg font-semibold text-orange-600 border-2 border-orange-600 rounded-xl">
                         Read more
                     </a>
                 </div>
@@ -149,7 +136,7 @@
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Peloponnese, Greece</h5>
                     </a>
                     <p class="mb-3 font-normal text-gray-700">Armed with suncream and a tent I explored Messenia, Kalamata & Olympia. An amazing region full of history...and snakes!</p>
-                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-orange-500 border-2 border-orange-500 rounded-lg">
+                    <a href="#" class="flex justify-center items-center px-3 py-2 text-lg font-semibold text-orange-600 border-2 border-orange-600 rounded-xl">
                         Read more
                     </a>
                 </div>
@@ -174,10 +161,7 @@
                 <a href="#" class="mr-4 hover:underline md:mr-6 md:hover:bg-transparent text-lg md:hover:text-orange-500 md:p-0 ">Home</a>
             </li>
             <li>
-                <a href="#" class="mr-4 hover:underline md:mr-6 md:hover:bg-transparent text-lg md:hover:text-orange-500 md:p-0">Gallery</a>
-            </li>
-            <li>
-                <a href="#" class="mr-4 hover:underline md:mr-6 md:hover:bg-transparent text-lg md:hover:text-orange-500 md:p-0">Blog</a>
+                <a href="#" class="mr-4 hover:underline md:mr-6 md:hover:bg-transparent text-lg md:hover:text-orange-500 md:p-0">About Me</a>
             </li>
             <li>
                 <a href="#" class="hover:underline md:hover:bg-transparent text-lg md:hover:text-orange-500 md:p-0">Contact</a>
